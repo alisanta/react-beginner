@@ -34,10 +34,38 @@ export default function Main() {
         <TodoItem /> Mewchuu
       </div>
       <div>
-        <ContactCard name="Meochoo" imgUrl="" email="mee@g" phone="01010" />
-        <ContactCard name="Snorlex" imgUrl="" email="snor@g" phone="011120" />
-        <ContactCard name="Charizard" imgUrl="" email="char@g" phone="02010" />
-        <ContactCard name="Pikachu" imgUrl="" email="pika@g" phone="04010" />
+        <ContactCard
+          contact={{
+            name: "Meochoo",
+            imgUrl: "",
+            email: "aa@gg",
+            phone: "01010"
+          }}
+        />
+        <ContactCard
+          contact={{
+            name: "Snorlex",
+            imgUrl: "",
+            email: "bb@gg",
+            phone: "01010"
+          }}
+        />
+        <ContactCard
+          contact={{
+            name: "Pikachu",
+            imgUrl: "",
+            email: "cc@gg",
+            phone: "01010"
+          }}
+        />
+        <ContactCard
+          contact={{
+            name: "Charizard",
+            imgUrl: "",
+            email: "dd@gg",
+            phone: "01010"
+          }}
+        />
       </div>
       <Button variant="primary">Primary</Button>{" "}
       <Button variant="secondary">Secondary</Button>{" "}
