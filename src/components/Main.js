@@ -2,11 +2,17 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import TodoItem from "./TodoItem";
 import ContactCard from "./ContactCard";
+import Tododata from "./Tododata";
 
 export default function Main() {
   const myName = "Alist";
   const myGrade = "73";
   let todayDate = new Date();
+
+  let arrTodo = Tododata.map((todoitem) => (
+    <TodoItem key={todoitem.id} item={todoitem} />
+  ));
+
   const inlineStyle = {
     color: "#FF5500",
     backgroundColor: "yellow",
@@ -28,11 +34,7 @@ export default function Main() {
         <li>rere</li>
       </ul>
       <h2>To Do List </h2>
-      <div className="todolist">
-        <TodoItem /> Snorlex
-        <TodoItem /> Charizard
-        <TodoItem /> Mewchuu
-      </div>
+      <div className="todolist">{arrTodo}</div>
       <div>
         <ContactCard
           contact={{
